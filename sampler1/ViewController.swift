@@ -18,13 +18,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var data = [AlertData]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.viewDidLoad()
-        self.table1.register(UINib(nibName: "Cell1", bundle: nil), forCellReuseIdentifier: "Cell1")
+        self.table1.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "Cell1")
         table1.delegate = self
         table1.dataSource = self
-
-        
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -57,7 +53,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = table1.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as! TableViewCell
         cell.textLabel?.text = contentsArray[indexPath.row].title
         return cell
     }
