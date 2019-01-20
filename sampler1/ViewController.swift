@@ -18,6 +18,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var data = [AlertData]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.viewDidLoad()
+        self.table1.register(UINib(nibName: "Cell1", bundle: nil), forCellReuseIdentifier: "Cell1")
         table1.delegate = self
         table1.dataSource = self
 
@@ -25,6 +27,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         contentsArray = [dateData]()
@@ -54,7 +57,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = table1.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath)
         cell.textLabel?.text = contentsArray[indexPath.row].title
         return cell
     }

@@ -11,7 +11,7 @@ import CoreData
 import UserNotifications
 import RealmSwift
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate{
     
     var window: UIWindow?
     let realm = try! Realm()

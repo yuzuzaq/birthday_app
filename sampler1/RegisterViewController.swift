@@ -42,23 +42,25 @@ class RegisterViewController: UIViewController,UIImagePickerControllerDelegate,U
             picker.allowsEditing = true
             present(picker, animated: true, completion: nil)
         }
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-            var image1 = info[UIImagePickerControllerOriginalImage] as? UIImage
-            print(type(of: image1))
-           choseimageview.image = image1
-            //UIImage -> NSData 変換
-//            if let data1 = UIImagePNGRepresentation(info[UIImagePickerControllerOriginalImage] as! UIImage){
-//                //NSDataでrealmに保存
-//                let person_image = Person_image()
-//                person_image.data = data1 as NSData
-//                try! realm.write() {
-//                    realm.add(person_image)
-//                    print("good")
-//                }
-//            }
-            dismiss(animated: true, completion: nil)
-        }
         
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        var image1 = info[UIImagePickerControllerOriginalImage] as? UIImage
+        print(type(of: image1))
+        choseimageview.image = image1
+        //UIImage -> NSData 変換
+        //            if let data1 = UIImagePNGRepresentation(info[UIImagePickerControllerOriginalImage] as! UIImage){
+        //                //NSDataでrealmに保存
+        //                let person_image = Person_image()
+        //                person_image.data = data1 as NSData
+        //                try! realm.write() {
+        //                    realm.add(person_image)
+        //                    print("good")
+        //                }
+        //            }
+        dismiss(animated: true, completion: nil)
     }
     
     

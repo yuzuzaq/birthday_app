@@ -11,6 +11,8 @@
 		0316F85D214E2F27001A3776 /* timeto.png in Resources */ = {isa = PBXBuildFile; fileRef = 0316F85C214E2F25001A3776 /* timeto.png */; };
 		0316F85F214E325E001A3776 /* haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = 0316F85E214E325D001A3776 /* haikei.png */; };
 		0381DD4321F41AAA00532438 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0381DD4221F41AAA00532438 /* iTunesArtwork@2x.png */; };
+		03CEF8AC21F450F100EE6508 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CEF8AA21F450F100EE6508 /* TableViewCell.swift */; };
+		03CEF8AD21F450F100EE6508 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CEF8AB21F450F100EE6508 /* TableViewCell.xib */; };
 		03F7F37621858CDD00460763 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F7F37521858CDD00460763 /* Helper.swift */; };
 		03F7F37A21AA4E3D00460763 /* collectionSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F7F37921AA4E3D00460763 /* collectionSampleViewController.swift */; };
 		03F7F37C21AA62B600460763 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F7F37B21AA62B600460763 /* TopViewController.swift */; };
@@ -50,6 +52,8 @@
 		0316F85C214E2F25001A3776 /* timeto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timeto.png; sourceTree = "<group>"; };
 		0316F85E214E325D001A3776 /* haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei.png; sourceTree = "<group>"; };
 		0381DD4221F41AAA00532438 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		03CEF8AA21F450F100EE6508 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		03CEF8AB21F450F100EE6508 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		03F7F37521858CDD00460763 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		03F7F37921AA4E3D00460763 /* collectionSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionSampleViewController.swift; sourceTree = "<group>"; };
 		03F7F37B21AA62B600460763 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				03F7F37B21AA62B600460763 /* TopViewController.swift */,
 				0316F858214E1B4B001A3776 /* RegisterViewController.swift */,
 				B9D11CBD21F34FD500AB308D /* ImageViewController.swift */,
+				03CEF8AA21F450F100EE6508 /* TableViewCell.swift */,
+				03CEF8AB21F450F100EE6508 /* TableViewCell.xib */,
 			);
 			path = sampler1;
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 			files = (
 				03F8C37D214E13DC005C5A4C /* LaunchScreen.storyboard in Resources */,
 				0381DD4321F41AAA00532438 /* iTunesArtwork@2x.png in Resources */,
+				03CEF8AD21F450F100EE6508 /* TableViewCell.xib in Resources */,
 				03F8C37A214E13DC005C5A4C /* Assets.xcassets in Resources */,
 				03F8C375214E13DC005C5A4C /* Main.storyboard in Resources */,
 				0316F85D214E2F27001A3776 /* timeto.png in Resources */,
@@ -493,6 +500,7 @@
 				03F7F37A21AA4E3D00460763 /* collectionSampleViewController.swift in Sources */,
 				03F8C372214E13DC005C5A4C /* ViewController.swift in Sources */,
 				03F8C378214E13DC005C5A4C /* sampler1.xcdatamodeld in Sources */,
+				03CEF8AC21F450F100EE6508 /* TableViewCell.swift in Sources */,
 				03F7F37621858CDD00460763 /* Helper.swift in Sources */,
 				03F8C370214E13DC005C5A4C /* AppDelegate.swift in Sources */,
 				0316F859214E1B4B001A3776 /* RegisterViewController.swift in Sources */,
