@@ -23,7 +23,7 @@ class AlertData1: Object {
     @objc dynamic var contents  = ""
     @objc dynamic var month  = 0
     @objc dynamic var day  = 0
-    @objc dynamic var data = NSData()
+    @objc dynamic var imageData = NSData()
 }
 
 

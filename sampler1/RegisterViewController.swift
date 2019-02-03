@@ -22,7 +22,7 @@ class RegisterViewController: UIViewController,UIImagePickerControllerDelegate,U
     var contents:String!
     var month:Int!
     var day:Int!
-    var image1:UIImage!
+    var imageData:NSData!
     let realm = try! Realm()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,7 @@ class RegisterViewController: UIViewController,UIImagePickerControllerDelegate,U
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        image1 = info[UIImagePickerControllerOriginalImage] as? UIImage
+        var image1 = info[UIImagePickerControllerOriginalImage] as? UIImage
         print(type(of: image1))
         choseimageview.image = image1
 //        UIImage -> NSData 変換
@@ -60,6 +60,10 @@ class RegisterViewController: UIViewController,UIImagePickerControllerDelegate,U
                             print("good")
                         }
                     }
+        imageData =  UIImagePNGRepresentation(info[UIImagePickerControllerOriginalImage] as! UIImage) as! NSDatado{
+            
+        }
+        
         dismiss(animated: true, completion: nil)
     }
     
@@ -82,22 +86,28 @@ class RegisterViewController: UIViewController,UIImagePickerControllerDelegate,U
             alert(message: "day入れて")
             return
         }
+        guard imageData != nil else {
+            alert(message: "imageを入れて")
+            return
+        }
         
         title1 = titleTextField.text
         contents = contentsTextView.text
         month = Int(dayTextField.text!)
         day = Int(monthTextField.text!)
         
-        let data = AlertData()
+        let data = AlertData1()
         data.title = title1
         data.contents = contents
         data.month = month
         data.day = day
+        data.imageData = imageData
+        
         //realm登録
         try! realm.write() {
             realm.add(data)
             alert(message: "登録完了")
-            let storyboardagain: UIStoryboard = self.storyboard!
+            //let storyboardagain: UIStoryboard = self.storyboard!
             let third = storyboard?.instantiateViewController(withIdentifier: "third")
             self.present(third!, animated: true, completion: nil)
         }
