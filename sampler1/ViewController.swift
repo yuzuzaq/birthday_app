@@ -55,7 +55,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as! TableViewCell
-        cell.textLabel?.text = contentsArray[indexPath.row].title
+        cell.cellnameLabel.text = contentsArray[indexPath.row].title
         return cell
     }
     

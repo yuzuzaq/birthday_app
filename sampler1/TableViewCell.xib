@@ -111,7 +111,7 @@
                 <outlet property="cellmonthLabel" destination="uw4-nf-4Yc" id="fuV-g3-eZc"/>
                 <outlet property="cellnameLabel" destination="alb-e2-TOt" id="Rnt-gt-us8"/>
             </connections>
-            <point key="canvasLocation" x="-45" y="44"/>
+            <point key="canvasLocation" x="-37" y="7"/>
         </tableViewCell>
     </objects>
     <resources>
