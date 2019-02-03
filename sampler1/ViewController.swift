@@ -38,14 +38,16 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 //            }
 //        }
         //realmデータを全て取り出し
-        let data = realm.objects(AlertData.self)
+        let data = realm.objects(AlertData1.self)
         //realmデータを一つずつ取り出しcontentsArrayに追加
         data.forEach { (diff) in
-            contentsArray.append(dateData(title: diff.title, contents: diff.contents, month: diff.month, day: diff.day))
+            contentsArray.append(dateData(title: diff.title, contents: diff.contents, month: diff.month, day: diff.day, imageData: diff.imageData))
         }
         print(contentsArray)
         table1.reloadData()
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -62,6 +64,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         cell.cellnameLabel.text = contentsArray[indexPath.row].title
         cell.cellmonthLabel.text = String(contentsArray[indexPath.row].day)
         cell.celldayLabel.text = String(contentsArray[indexPath.row].month)
+        let image1: UIImage? = UIImage(data: contentsArray[indexPath.row].imageData as Data)
+        cell.cellImageView.image = image1
         return cell
     }
     
@@ -91,11 +95,13 @@ class dateData {
     var contents:String!
     var month:Int!
     var day:Int!
-    init(title:String,contents:String,month:Int,day:Int) {
+    var imageData:NSData
+    init(title:String,contents:String,month:Int,day:Int,imageData:NSData) {
         self.title = title
         self.contents = contents
         self.month = month
         self.day = day
+        self.imageData = imageData
     }
 
 }

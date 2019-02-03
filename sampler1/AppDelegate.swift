@@ -60,10 +60,10 @@ var contentsArray = [dateData]()
         var notificationTime = DateComponents()
         contentsArray = [dateData]()
         //realmから登録した全てのオブジェクトから取り出す
-        let data = realm.objects(AlertData.self)
+        let data = realm.objects(AlertData1.self)
         // ここで全てを一つずつ取り出しcontentsArrayに追加
         data.forEach { (diff) in
-            contentsArray.append(dateData(title: diff.title, contents: diff.contents, month: diff.month, day: diff.day))
+            contentsArray.append(dateData(title: diff.title, contents: diff.contents, month: diff.month, day: diff.day, imageData: diff.imageData))
         }
         var num = 0
         //        contentsArrayを一つずつ取り出し通知のトリガーを登録
