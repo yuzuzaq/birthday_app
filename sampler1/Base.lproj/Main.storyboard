@@ -100,15 +100,15 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="FjW-AR-iL6"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork.png" translatesAutoresizingMaskIntoConstraints="NO" id="DTW-OF-vvu">
-                                <rect key="frame" x="67" y="221" width="240" height="240"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="DTW-OF-vvu">
+                                <rect key="frame" x="42" y="192" width="291" height="282"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="GsP-IO-Ynb"/>
                                     <constraint firstAttribute="height" constant="240" id="PUw-h1-Y7e"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99904292821884155" green="0.21851128339767456" blue="0.31239181756973267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99950271844863892" green="0.013677523471415043" blue="0.19295743107795715" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0e5-bw-mxb" firstAttribute="trailing" secondItem="DTW-OF-vvu" secondAttribute="trailing" constant="68" id="4Ut-2k-EHl"/>
                             <constraint firstItem="0e5-bw-mxb" firstAttribute="trailing" secondItem="DTW-OF-vvu" secondAttribute="trailing" constant="68" id="66z-LW-6gd"/>
@@ -247,9 +247,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iWu-We-3Id">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iWu-We-3Id">
                                 <rect key="frame" x="59" y="452" width="258" height="91"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="258" id="CXQ-oY-b3a"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="91" id="ORt-qT-veP"/>
+                                    <constraint firstAttribute="height" constant="91" id="ogB-Ym-k5F"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
@@ -282,7 +287,7 @@
                                 <color key="textColor" red="0.99904292819999996" green="0.21851128340000001" blue="0.31239181760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ba7-62-LX6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ba7-62-LX6">
                                 <rect key="frame" x="59" y="569" width="258" height="54"/>
                                 <color key="backgroundColor" red="0.99904292819999996" green="0.21851128340000001" blue="0.31239181760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -334,8 +339,11 @@
                                 <color key="textColor" red="0.99904292819999996" green="0.21851128340000001" blue="0.31239181760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="day" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qbt-g8-eDq">
-                                <rect key="frame" x="197" y="357" width="112" height="50"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="day" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qbt-g8-eDq">
+                                <rect key="frame" x="197" y="357" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eg1-pz-Krc"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -359,17 +367,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.85070494969999999" blue="0.87643114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iWu-We-3Id" firstAttribute="trailing" secondItem="Ba7-62-LX6" secondAttribute="trailing" id="1wC-p0-HMK"/>
+                            <constraint firstItem="iWu-We-3Id" firstAttribute="trailing" secondItem="Ba7-62-LX6" secondAttribute="trailing" id="0WG-sb-E8P"/>
                             <constraint firstItem="hO5-24-jnT" firstAttribute="baseline" secondItem="KmV-8S-XLi" secondAttribute="baseline" id="4Bk-Hg-JOM"/>
                             <constraint firstItem="Ba7-62-LX6" firstAttribute="top" secondItem="iWu-We-3Id" secondAttribute="bottom" constant="26" id="4Vi-oo-y28"/>
                             <constraint firstItem="vFv-GO-oJk" firstAttribute="top" secondItem="aLy-nb-bma" secondAttribute="bottom" constant="21" id="55B-E1-Q0x"/>
                             <constraint firstItem="hO5-24-jnT" firstAttribute="top" secondItem="vFv-GO-oJk" secondAttribute="bottom" constant="66" id="5AL-5h-XiE"/>
-                            <constraint firstItem="iLZ-K1-o9v" firstAttribute="trailing" secondItem="Qbt-g8-eDq" secondAttribute="trailing" constant="66" id="7BR-yI-QTQ"/>
-                            <constraint firstItem="iWu-We-3Id" firstAttribute="leading" secondItem="Ba7-62-LX6" secondAttribute="leading" id="8qM-g6-did"/>
                             <constraint firstItem="hMx-8G-szT" firstAttribute="leading" secondItem="iLZ-K1-o9v" secondAttribute="leading" constant="59" id="DLe-iN-1j9"/>
                             <constraint firstItem="UYv-Be-OkP" firstAttribute="top" secondItem="5ng-YN-4VM" secondAttribute="bottom" constant="48" id="ERY-5K-x9P"/>
                             <constraint firstItem="5ng-YN-4VM" firstAttribute="leading" secondItem="aLy-nb-bma" secondAttribute="trailing" constant="42" id="EWZ-qZ-Y0p"/>
-                            <constraint firstItem="UYv-Be-OkP" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iWu-We-3Id" secondAttribute="trailing" id="Gdz-ee-zA8"/>
                             <constraint firstItem="aLy-nb-bma" firstAttribute="top" secondItem="hMx-8G-szT" secondAttribute="bottom" constant="8" symbolic="YES" id="Ghh-sk-0Tb"/>
                             <constraint firstItem="iLZ-K1-o9v" firstAttribute="trailing" secondItem="vFv-GO-oJk" secondAttribute="trailing" constant="182" id="IU7-sK-k5T"/>
                             <constraint firstItem="hO5-24-jnT" firstAttribute="centerY" secondItem="eIu-YC-jEn" secondAttribute="centerY" id="Jhi-5V-P32"/>
@@ -377,8 +382,10 @@
                             <constraint firstItem="VWI-NO-I54" firstAttribute="top" secondItem="Rvs-dE-sT0" secondAttribute="bottom" constant="8" symbolic="YES" id="LB7-o6-7ue"/>
                             <constraint firstItem="hO5-24-jnT" firstAttribute="top" secondItem="UYv-Be-OkP" secondAttribute="bottom" constant="21" id="N8v-jp-7gk"/>
                             <constraint firstItem="5ng-YN-4VM" firstAttribute="leading" secondItem="KmV-8S-XLi" secondAttribute="leading" id="Nqn-x6-KQf"/>
+                            <constraint firstItem="iWu-We-3Id" firstAttribute="leading" secondItem="VWI-NO-I54" secondAttribute="leading" id="Ops-lQ-JYB"/>
                             <constraint firstItem="Qbt-g8-eDq" firstAttribute="leading" secondItem="Rvs-dE-sT0" secondAttribute="trailing" constant="24" id="PIh-Xf-ooe"/>
                             <constraint firstItem="Qbt-g8-eDq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KmV-8S-XLi" secondAttribute="leading" id="PsR-Rt-XxD"/>
+                            <constraint firstItem="iLZ-K1-o9v" firstAttribute="trailing" secondItem="Qbt-g8-eDq" secondAttribute="trailing" constant="58" id="S2F-xO-iHn"/>
                             <constraint firstItem="aLy-nb-bma" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UYv-Be-OkP" secondAttribute="leading" id="SDa-EV-nNe"/>
                             <constraint firstItem="KmV-8S-XLi" firstAttribute="leading" secondItem="hO5-24-jnT" secondAttribute="trailing" constant="14" id="SUP-7w-DQv"/>
                             <constraint firstItem="iLZ-K1-o9v" firstAttribute="bottom" secondItem="Ba7-62-LX6" secondAttribute="bottom" constant="44" id="Tca-yo-rju"/>
@@ -396,7 +403,7 @@
                             <constraint firstItem="UYv-Be-OkP" firstAttribute="centerX" secondItem="eIu-YC-jEn" secondAttribute="centerX" id="rJY-dP-xQ5"/>
                             <constraint firstItem="hO5-24-jnT" firstAttribute="leading" secondItem="Rvs-dE-sT0" secondAttribute="leading" id="t7n-hz-cFV"/>
                             <constraint firstItem="UYv-Be-OkP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VWI-NO-I54" secondAttribute="leading" id="toc-31-dEY"/>
-                            <constraint firstItem="VWI-NO-I54" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iWu-We-3Id" secondAttribute="leading" id="y8P-bp-E9s"/>
+                            <constraint firstItem="iWu-We-3Id" firstAttribute="leading" secondItem="Ba7-62-LX6" secondAttribute="leading" id="x01-ra-Flr"/>
                             <constraint firstItem="vFv-GO-oJk" firstAttribute="leading" secondItem="hO5-24-jnT" secondAttribute="leading" id="y8l-S3-4vQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iLZ-K1-o9v"/>
@@ -433,6 +440,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="iTunesArtwork.png" width="512" height="512"/>
+        <image name="icon.png" width="1536" height="1536"/>
     </resources>
 </document>

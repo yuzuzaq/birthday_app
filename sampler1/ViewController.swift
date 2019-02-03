@@ -21,6 +21,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.table1.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "Cell1")
         table1.delegate = self
         table1.dataSource = self
+       
         // Do any additional setup after loading the view, typically from a nib.
     }
     

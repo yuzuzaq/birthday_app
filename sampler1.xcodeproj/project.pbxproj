@@ -10,6 +10,7 @@
 		0316F859214E1B4B001A3776 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316F858214E1B4B001A3776 /* RegisterViewController.swift */; };
 		0316F85D214E2F27001A3776 /* timeto.png in Resources */ = {isa = PBXBuildFile; fileRef = 0316F85C214E2F25001A3776 /* timeto.png */; };
 		0316F85F214E325E001A3776 /* haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = 0316F85E214E325D001A3776 /* haikei.png */; };
+		033AEBBA21FC7D3D00515458 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 033AEBB921FC7D3D00515458 /* icon.png */; };
 		0381DD4321F41AAA00532438 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0381DD4221F41AAA00532438 /* iTunesArtwork@2x.png */; };
 		03CEF8AC21F450F100EE6508 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CEF8AA21F450F100EE6508 /* TableViewCell.swift */; };
 		03CEF8AD21F450F100EE6508 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CEF8AB21F450F100EE6508 /* TableViewCell.xib */; };
@@ -51,6 +52,7 @@
 		0316F858214E1B4B001A3776 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0316F85C214E2F25001A3776 /* timeto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timeto.png; sourceTree = "<group>"; };
 		0316F85E214E325D001A3776 /* haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei.png; sourceTree = "<group>"; };
+		033AEBB921FC7D3D00515458 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		0381DD4221F41AAA00532438 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		03CEF8AA21F450F100EE6508 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		03CEF8AB21F450F100EE6508 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		03F8C36E214E13DC005C5A4C /* sampler1 */ = {
 			isa = PBXGroup;
 			children = (
+				033AEBB921FC7D3D00515458 /* icon.png */,
 				0381DD4221F41AAA00532438 /* iTunesArtwork@2x.png */,
 				03F8C36F214E13DC005C5A4C /* AppDelegate.swift */,
 				03F8C373214E13DC005C5A4C /* Main.storyboard */,
@@ -318,6 +321,7 @@
 				0381DD4321F41AAA00532438 /* iTunesArtwork@2x.png in Resources */,
 				03CEF8AD21F450F100EE6508 /* TableViewCell.xib in Resources */,
 				03F8C37A214E13DC005C5A4C /* Assets.xcassets in Resources */,
+				033AEBBA21FC7D3D00515458 /* icon.png in Resources */,
 				03F8C375214E13DC005C5A4C /* Main.storyboard in Resources */,
 				0316F85D214E2F27001A3776 /* timeto.png in Resources */,
 				0316F85F214E325E001A3776 /* haikei.png in Resources */,
