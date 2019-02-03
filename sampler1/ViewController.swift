@@ -10,6 +10,7 @@ import UIKit
 import RealmSwift
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    //Tableviewの配列を作成
     let realm = try! Realm()
     var contentsArray = [dateData]()
     //    var todoItem: Results<dateData>!
@@ -25,6 +26,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    //RealmデータをTableviewに表示
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         contentsArray = [dateData]()
@@ -53,12 +55,17 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return contentsArray.count
     }
     
+    //カスタムセルにデータを入れる
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as! TableViewCell
         cell.cellnameLabel.text = contentsArray[indexPath.row].title
+        cell.cellmonthLabel.text = String(contentsArray[indexPath.row].day)
+        cell.celldayLabel.text = String(contentsArray[indexPath.row].month)
         return cell
     }
     
+    //セルのスワイプ、消去
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             contentsArray.remove(at: indexPath.row)
@@ -78,6 +85,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
 }
 
+//Realmのデータ
 class dateData {
     var title:String!
     var contents:String!
@@ -89,7 +97,9 @@ class dateData {
         self.month = month
         self.day = day
     }
+
 }
+
 
 
 //realmオブジェクトを設定

@@ -16,3 +16,15 @@ class AlertData: Object {
     @objc dynamic var month  = 0
     @objc dynamic var day  = 0
 }
+
+class AlertData1: Object {
+    
+    @objc dynamic var title = ""
+    @objc dynamic var contents  = ""
+    @objc dynamic var month  = 0
+    @objc dynamic var day  = 0
+    @objc dynamic var data = NSData()
+}
+
+
+

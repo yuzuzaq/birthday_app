@@ -26,24 +26,35 @@
                             <constraint firstAttribute="width" constant="137" id="8iY-Aq-Hdc"/>
                             <constraint firstAttribute="height" constant="137" id="9Mf-Lj-LkV"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alb-e2-TOt">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alb-e2-TOt">
                         <rect key="frame" x="204" y="16" width="146" height="59"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="59" id="CzY-9A-Aiv"/>
                             <constraint firstAttribute="width" constant="146" id="wnu-to-GhB"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="39"/>
-                        <nil key="textColor"/>
+                        <attributedString key="attributedText">
+                            <fragment content="名前">
+                                <attributes>
+                                    <font key="NSFont" size="39" name="HiraMaruProN-W4"/>
+                                    <font key="NSOriginalFont" size="39" name="HiraMaruProN-W4"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw4-nf-4Yc">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw4-nf-4Yc">
                         <rect key="frame" x="204" y="78" width="51" height="48"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="51" id="PkD-RR-6wE"/>
                             <constraint firstAttribute="height" constant="48" id="fZR-9n-I53"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="31"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -57,28 +68,39 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81E-xY-0oO">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81E-xY-0oO">
                         <rect key="frame" x="347" y="83" width="42" height="34"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="42" id="eOL-dI-rae"/>
                             <constraint firstAttribute="height" constant="34" id="yMM-hx-B1i"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                        <nil key="textColor"/>
+                        <attributedString key="attributedText">
+                            <fragment content="日">
+                                <attributes>
+                                    <font key="NSFont" size="31" name="HiraMaruProN-W4"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVw-Ir-k43">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVw-Ir-k43">
                         <rect key="frame" x="250" y="81" width="55" height="38"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="55" id="Ygp-2o-aLM"/>
                             <constraint firstAttribute="height" constant="38" id="lBI-tU-wUl"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                        <nil key="textColor"/>
+                        <attributedString key="attributedText">
+                            <fragment content="月">
+                                <attributes>
+                                    <font key="NSFont" size="31" name="HiraMaruProN-W4"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" red="0.80961964070000003" green="1" blue="0.74896406520000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="backgroundColor" red="1" green="0.8392568554017199" blue="0.82494028439485745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="gVw-Ir-k43" firstAttribute="leading" secondItem="Zps-LB-HoK" secondAttribute="trailing" constant="83" id="2Fy-qv-mM3"/>
                     <constraint firstItem="81E-xY-0oO" firstAttribute="leading" secondItem="gVw-Ir-k43" secondAttribute="trailing" constant="42" id="35B-CO-jfn"/>
